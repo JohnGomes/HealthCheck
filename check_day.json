@@ -1,0 +1,54 @@
+{
+  "check":{
+    "response_type": "in_channel",
+    "text": "How is your day to day work?",
+    "channel": "DJGS6DCV6",
+    "attachments": [
+        {
+          
+            
+            "fallback": "You are unable to choose an option",
+            "callback_id": "day_check",
+            "color": "#F782AC",
+            "attachment_type": "default",
+            "actions": [
+                {
+                    "name": "Happy",
+                    "text": ":D Happy",
+                    "type": "button",
+                    "value": "5",
+                    "style": "primary"
+                },
+                {
+                    "name": "Satisfied",
+                    "text": ":) Satisfied",
+                    "type": "button",
+                    "value": "4"
+                },
+              {
+                    "name": "Neutral",
+                    "text": ":| Neutral",
+                    "type": "button",
+                    "value": "3"
+                },
+              {
+                    "name": "Unsatisfied",
+                    "text": ":/ Unsatisfied",
+                    "type": "button",
+                    "value": "2"
+                },
+              {
+                    "name": "Unhappy",
+                    "text": ":( Unhappy",
+                    "type": "button",
+                    "value": "1",
+                    "style": "danger"
+                }
+            ],
+          
+            "footer": " ",
+            "footer_icon": "https://apterahealthcheck.blob.core.windows.net/cdn/sun.png"
+        }
+    ]
+  }
+}

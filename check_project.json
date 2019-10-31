@@ -1,0 +1,50 @@
+{ 
+  "json": {
+     "response_type": "in_channel",
+    "text": "How is your Project work going?", 
+    "attachments": [        
+      {
+            "fallback": "You are unable to choose an option",
+            "callback_id": "proj_check",
+            "color": "#FE7D10",
+            "attachment_type": "default",
+            "actions": [
+                {
+                    "name": "Happy",
+                    "text": ":D Happy",
+                    "type": "button",
+                    "value": "5",
+                    "style": "primary"
+                },
+                {
+                    "name": "Satisfied",
+                    "text": ":) Satisfied",
+                    "type": "button",
+                    "value": "4"
+                },
+              {
+                    "name": "Neutral",
+                    "text": ":| Neutral",
+                    "type": "button",
+                    "value": "3"
+                },
+              {
+                    "name": "Unsatisfied",
+                    "text": ":/ Unsatisfied",
+                    "type": "button",
+                    "value": "2"
+                },
+              {
+                    "name": "Unhappy",
+                    "text": ":( Unhappy",
+                    "type": "button",
+                    "value": "1",
+                    "style": "danger"
+                }
+            ],
+            "footer": " ",
+            "footer_icon": "https://apterahealthcheck.blob.core.windows.net/cdn/comp.png"
+        }
+    ]
+  }
+}
