@@ -1,0 +1,50 @@
+{ 
+  "json": {
+     "response_type": "in_channel",
+    "text": "Do you feel supported?", 
+    "attachments": [        
+      {
+            "fallback": "You are unable to choose an option",
+            "callback_id": "sup_check",
+            "color": "#19A8BE",
+            "attachment_type": "default",
+            "actions": [
+                {
+                    "name": "Happy",
+                    "text": ":D Yes",
+                    "type": "button",
+                    "value": "5",
+                    "style": "primary"
+                },
+                {
+                    "name": "Satisfied",
+                    "text": ":) Kinda",
+                    "type": "button",
+                    "value": "4"
+                },
+              {
+                    "name": "Neutral",
+                    "text": ":| Neutral",
+                    "type": "button",
+                    "value": "3"
+                },
+              {
+                    "name": "Unsatisfied",
+                    "text": ":/ Not Really",
+                    "type": "button",
+                    "value": "2"
+                },
+              {
+                    "name": "Unhappy",
+                    "text": ":( No",
+                    "type": "button",
+                    "value": "1",
+                    "style": "danger"
+                }
+            ],
+            "footer": " ",
+            "footer_icon": "https://apterahealthcheck.blob.core.windows.net/cdn/tube.png"
+        }
+    ]
+  }
+}
